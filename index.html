@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TaskFlow | Gerenciador de tarefas</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="app">
+    <header class="header">
+      <div>
+        <p class="eyebrow">ORGANIZE SEU DIA</p>
+        <h1>TaskFlow<span>.</span></h1>
+        <p class="subtitle">Pequenos passos, grandes resultados.</p>
+      </div>
+
+      <div class="date" id="current-date"></div>
+    </header>
+
+    <section class="summary">
+      <div class="summary-card">
+        <span class="summary-label">Total de tarefas</span>
+        <strong id="total-tasks">0</strong>
+      </div>
+
+      <div class="summary-card">
+        <span class="summary-label">Concluídas</span>
+        <strong id="completed-tasks">0</strong>
+      </div>
+
+      <div class="summary-card">
+        <span class="summary-label">Pendentes</span>
+        <strong id="pending-tasks">0</strong>
+      </div>
+    </section>
+
+    <section class="task-section">
+      <div class="section-heading">
+        <div>
+          <h2>Minhas tarefas</h2>
+          <p>O que você quer realizar hoje?</p>
+        </div>
+      </div>
+
+      <form id="task-form" class="task-form">
+        <input
+          type="text"
+          id="task-input"
+          placeholder="Ex.: Estudar JavaScript"
+          aria-label="Descrição da tarefa"
+        >
+        <button type="submit">+ Adicionar</button>
+      </form>
+
+      <ul id="task-list" class="task-list"></ul>
+
+      <p id="empty-message" class="empty-message">
+        Nenhuma tarefa por enquanto. Adicione sua primeira!
+      </p>
+    </section>
+
+    <footer>
+      Feito para evoluir um pouco todos os dias.
+    </footer>
+  </main>
+</body>
+</html>
